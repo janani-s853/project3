@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tictac.css">
+    <script src="tictac.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+<body>
+    <div id="turn-display">Your Turn (X)</div>
+    <div id="board"></div>
+
+    <a href="index.html">
+        <div id="back-button">
+            <img src="assets/back-button.png" alt="Back" />
+        </div>
+    </a>
+
+    <div id="game-over-overlay" class="hide">
+        <div id="game-over-message"></div>
+        <div class="game-over-actions">
+            <a href="index.html">
+                <img src="assets/home (1).png" alt="Home" id="home-icon">
+            </a>
+            <button id="play-again-button">Play Again</button>
+        </div>
+    </div>
+</body>
+</html>

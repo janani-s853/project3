@@ -1,0 +1,122 @@
+body {
+    background-image: url("https://janschreiber.github.io/img2/black-chalk.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.game {
+    position: relative;
+    width: 300px;
+    height: 240px;
+    border: 4px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.game:hover {
+    transform: scale(1.05);
+}
+
+.game img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.game-text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    padding: 10px;
+}
+
+@media(max-width: 85em) {
+    .game {
+        width: 260px;
+        height: 240px;
+    }
+    .game-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 70em) {
+    .game {
+        width: 260px;
+        height: 240px;
+    }
+    .game-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 50em) {
+    .game {
+        width: 260px;
+        height: 240px;
+    }
+    .game-text {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 40em) {
+    .game {
+        width: 230px;
+        height: 200px;
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 34em) {
+    .game {
+        width: 200px;
+        height: 170px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
+}

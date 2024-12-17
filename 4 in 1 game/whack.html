@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack A Mole</title>
+    <link rel="stylesheet" href="whack.css">
+    <script src="whack.js" defer></script>
+</head>
+<body>
+    <h1>Whack A Mole</h1>
+    <div id="score-container">
+        <h2 id="score">Score: 0</h2>
+    </div>
+    <div id="highest-score-container">
+        <h2 id="highest-score">Highest Score: 0</h2>
+    </div>
+    <div id="board"></div>
+
+    <div id="back-img">
+        <a href="index.html">
+            <img src="assets/previous.png" alt="Back" />
+        </a>
+    </div>
+    <div id="game-over-container" style="display: none;">
+        <h2 id="game-over-message">Game Over</h2>
+        <button id="play-again" onclick="restartGame()">Play Again</button>
+    </div>
+</body>
+</html>
